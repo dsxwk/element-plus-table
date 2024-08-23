@@ -19,16 +19,16 @@
         <GridItem suffix class="operation-right">
           <div class="operation">
             <el-button type="primary" :icon="Search" @click="search">
-              operationBtnText?.search
+              {{operationBtnText?.search ?? '搜索'}}
             </el-button>
-            <el-button :icon="Delete" @click="reset">operationBtnText?.reset</el-button>
+            <el-button :icon="Delete" @click="reset">{{operationBtnText?.reset ?? '重置'}}</el-button>
             <el-button
               v-if="showCollapse"
               type="primary"
               link
               class="search-isOpen"
               @click="collapsed = !collapsed">
-              {{ collapsed ? operationBtnText?.ArrowDown : operationBtnText?.ArrowUp }}
+              {{ collapsed ? (operationBtnText?.ArrowDown ?? '展开') : (operationBtnText?.ArrowUp) ?? '合并' }}
               <el-icon class="el-icon--right">
                 <component :is="collapsed ? ArrowDown : ArrowUp"></component>
               </el-icon>
