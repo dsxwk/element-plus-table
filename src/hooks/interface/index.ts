@@ -19,6 +19,9 @@ export namespace Table {
     }
     icon?: {
       [key: string]: any
+    },
+    operationBtnText?: {
+      [key: string]: any
     }
   }
 }

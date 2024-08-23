@@ -34128,6 +34128,9 @@ const _hoisted_7 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
     requestError: {},
     dataCallback: {},
     resetCallback: {},
+    operationBtnText: {
+      default: {}
+    },
     title: {},
     pagination: {
       type: Boolean,
@@ -34177,6 +34180,7 @@ const _hoisted_7 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
       tableData,
       pageable,
       searchParam,
+      operationBtnText,
       searchInitParam,
       getTableList,
       search,
@@ -34282,8 +34286,9 @@ const _hoisted_7 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
         reset: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(reset),
         columns: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(searchColumns),
         "search-param": (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(searchParam),
-        "search-col": _ctx.searchCol
-      }, null, 8, ["search", "reset", "columns", "search-param", "search-col"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_.vShow, isShowSearch.value]]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_2, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_3, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderSlot)(_ctx.$slots, "tableHeader", {
+        "search-col": _ctx.searchCol,
+        operationBtnText: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(operationBtnText)
+      }, null, 8, ["search", "reset", "columns", "search-param", "search-col", "operationBtnText"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_.vShow, isShowSearch.value]]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_2, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_3, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderSlot)(_ctx.$slots, "tableHeader", {
         selectedListIds: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(selectedListIds),
         selectedList: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(selectedList),
         isSelected: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(isSelected)

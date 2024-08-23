@@ -160,6 +160,7 @@ const {
   tableData,
   pageable,
   searchParam,
+  operationBtnText,
   searchInitParam,
   getTableList,
   search,
