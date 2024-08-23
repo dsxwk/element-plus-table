@@ -19,16 +19,16 @@
         <GridItem suffix class="operation-right">
           <div class="operation">
             <el-button type="primary" :icon="Search" @click="search">
-              搜索
+              operationBtnText?.search
             </el-button>
-            <el-button :icon="Delete" @click="reset">重置</el-button>
+            <el-button :icon="Delete" @click="reset">operationBtnText?.reset</el-button>
             <el-button
               v-if="showCollapse"
               type="primary"
               link
               class="search-isOpen"
               @click="collapsed = !collapsed">
-              {{ collapsed ? "展开" : "合并" }}
+              {{ collapsed ? operationBtnText?.ArrowDown : operationBtnText?.ArrowUp }}
               <el-icon class="el-icon--right">
                 <component :is="collapsed ? ArrowDown : ArrowUp"></component>
               </el-icon>
@@ -55,12 +55,14 @@ interface ProTableProps {
   searchCol: number | Record<BreakPoint, number>;
   search: (params: any) => void; // 搜索方法
   reset: (params: any) => void; // 重置方法
+  operationBtnText: { [key: string]: any }; // 操作按钮文本对象
 }
 
 // 默认值
 const props = withDefaults(defineProps<ProTableProps>(), {
   columns: () => [],
   searchParam: () => ({}),
+  operationBtnText: () => ({})
 });
 
 // 获取响应式设置
