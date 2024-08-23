@@ -33245,7 +33245,6 @@ function findItemNested(enumData, callValue, value, children) {
  * @return array
  */
 function handleRouter(routerList, newArr = []) {
-  console.log(111, routerList);
   routerList?.forEach(item => {
     typeof item === "object" && item.enName && newArr.push(item.enName);
     item.children && item.children.length && handleRouter(item.children, newArr);
@@ -34162,7 +34161,6 @@ const _hoisted_7 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
       tableData,
       pageable,
       searchParam,
-      operationBtnText,
       searchInitParam,
       getTableList,
       search,
@@ -34250,6 +34248,7 @@ const _hoisted_7 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
       pageable,
       searchParam,
       searchInitParam,
+      operationBtnText: Object,
       getTableList,
       search,
       reset,
@@ -34269,7 +34268,7 @@ const _hoisted_7 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
         columns: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.unref)(searchColumns),
         "search-param": (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.unref)(searchParam),
         "search-col": _ctx.searchCol,
-        operationBtnText: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.unref)(operationBtnText)
+        operationBtnText: _ctx.operationBtnText
       }, null, 8, ["search", "reset", "columns", "search-param", "search-col", "operationBtnText"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.vShow, isShowSearch.value]]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_2, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_3, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.renderSlot)(_ctx.$slots, "tableHeader", {
         selectedListIds: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.unref)(selectedListIds),
         selectedList: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.unref)(selectedList),

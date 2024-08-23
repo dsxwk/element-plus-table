@@ -341,7 +341,6 @@ export function handleRouter(
   routerList: Menu.MenuOptions[],
   newArr: string[] = []
 ) {
-  console.log(111, routerList)
   routerList?.forEach((item: Menu.MenuOptions) => {
     typeof item === "object" && item.enName && newArr.push(item.enName)
     item.children && item.children.length && handleRouter(item.children, newArr)
