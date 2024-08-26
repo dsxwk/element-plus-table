@@ -34094,7 +34094,6 @@ const _hoisted_6 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
   src: notData_namespaceObject,
   alt: "notData"
 }, null, -1);
-const _hoisted_7 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", null, "暂无数据", -1);
 
 
 
@@ -34129,6 +34128,9 @@ const _hoisted_7 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
     resetCallback: {},
     operationBtnText: {
       default: {}
+    },
+    emptyListText: {
+      default: ''
     },
     title: {},
     pagination: {
@@ -34267,6 +34269,7 @@ const _hoisted_7 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
       searchParam,
       searchInitParam,
       operationBtnText: Object,
+      emptyListText: String,
       getTableList,
       search,
       reset,
@@ -34286,8 +34289,9 @@ const _hoisted_7 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
         columns: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(searchColumns),
         "search-param": (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(searchParam),
         "search-col": _ctx.searchCol,
-        operationBtnText: _ctx.operationBtnText
-      }, null, 8, ["search", "reset", "columns", "search-param", "search-col", "operationBtnText"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_.vShow, isShowSearch.value]]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_2, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_3, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderSlot)(_ctx.$slots, "tableHeader", {
+        operationBtnText: _ctx.operationBtnText,
+        emptyListText: _ctx.emptyListText
+      }, null, 8, ["search", "reset", "columns", "search-param", "search-col", "operationBtnText", "emptyListText"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_.vShow, isShowSearch.value]]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_2, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_3, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderSlot)(_ctx.$slots, "tableHeader", {
         selectedListIds: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(selectedListIds),
         selectedList: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(selectedList),
         isSelected: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(isSelected)
@@ -34301,7 +34305,7 @@ const _hoisted_7 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
         onSelectionChange: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.unref)(selectionChange)
       }), {
         append: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderSlot)(_ctx.$slots, "append")]),
-        empty: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_5, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderSlot)(_ctx.$slots, "empty", {}, () => [_hoisted_6, _hoisted_7])])]),
+        empty: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_5, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderSlot)(_ctx.$slots, "empty", {}, () => [_hoisted_6, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)(_ctx.emptyListText ?? '暂无数据'), 1)])])]),
         default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderSlot)(_ctx.$slots, "default"), ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)(tableColumns.value, item => {
           return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, {
             key: item

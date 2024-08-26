@@ -10,6 +10,7 @@
     :search-param="searchParam"
     :search-col="searchCol"
     :operationBtnText="operationBtnText"
+    :emptyListText="emptyListText"
   />
 
   <!-- 表格内容 card -->
@@ -72,7 +73,7 @@
         <div class="table-empty">
           <slot name="empty">
             <img src="@/assets/images/notData.png" alt="notData" />
-            <div>暂无数据</div>
+            <div>{{emptyListText ?? '暂无数据'}}</div>
           </slot>
         </div>
       </template>
@@ -121,6 +122,7 @@ export interface ProTableProps {
   dataCallback?: (data: any) => any; // 返回数据的回调函数，可以对数据进行处理 ==> 非必传
   resetCallback?: () => any; // 返回数据的回调函数，可以对数据进行处理 ==> 非必传
   operationBtnText?: any; // 操作按钮文字 ==> 非必传
+  emptyListText?: string; // 空列表文本描述
   title?: string; // 表格标题，目前只在打印的时候用到 ==> 非必传
   pagination?: boolean; // 是否需要分页组件 ==> 非必传（默认为true）
   initParam?: any; // 初始化请求参数 ==> 非必传（默认为{}）
@@ -134,7 +136,8 @@ export interface ProTableProps {
 const props = withDefaults(defineProps<ProTableProps>(), {
   columns: () => [],
   tableSearchColumns: () => [],
-  operationBtnText:{},
+  operationBtnText: {},
+  emptyListText: '',
   useTableSearchColumns: false,
   requestAuto: true,
   pagination: true,
@@ -287,6 +290,7 @@ defineExpose({
   searchParam,
   searchInitParam,
   operationBtnText:Object,
+  emptyListText:String,
   getTableList,
   search,
   reset,
