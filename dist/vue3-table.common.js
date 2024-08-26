@@ -34148,7 +34148,7 @@ const _hoisted_6 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
   }) {
     const props = __props;
     // 是否显示搜索模块
-    const isShowSearch = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.ref)(true);
+    // const isShowSearch = ref(props.isShowSearch);
     // 表格 DOM 元素
     const tableRef = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.ref)();
     // 表格多选 Hooks
@@ -34252,6 +34252,7 @@ const _hoisted_6 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
       searchInitParam,
       operationBtnText: Object,
       emptyListText: String,
+      isShowSearch: Boolean,
       getTableList,
       search,
       reset,
@@ -34273,7 +34274,7 @@ const _hoisted_6 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
         "search-col": _ctx.searchCol,
         operationBtnText: _ctx.operationBtnText,
         emptyListText: _ctx.emptyListText
-      }, null, 8, ["search", "reset", "columns", "search-param", "search-col", "operationBtnText", "emptyListText"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.vShow, isShowSearch.value]]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_2, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_3, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.renderSlot)(_ctx.$slots, "tableHeader", {
+      }, null, 8, ["search", "reset", "columns", "search-param", "search-col", "operationBtnText", "emptyListText"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.vShow, _ctx.isShowSearch]]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_2, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", ProTablevue_type_script_setup_true_lang_ts_name_ProTable_hoisted_3, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.renderSlot)(_ctx.$slots, "tableHeader", {
         selectedListIds: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.unref)(selectedListIds),
         selectedList: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.unref)(selectedList),
         isSelected: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.unref)(isSelected)
