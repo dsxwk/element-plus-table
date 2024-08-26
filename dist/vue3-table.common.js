@@ -34114,6 +34114,10 @@ const _hoisted_6 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_
     emptyListText: {
       default: ''
     },
+    isShowSearch: {
+      type: Boolean,
+      default: true
+    },
     title: {},
     pagination: {
       type: Boolean,

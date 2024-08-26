@@ -123,6 +123,7 @@ export interface ProTableProps {
   resetCallback?: () => any; // 返回数据的回调函数，可以对数据进行处理 ==> 非必传
   operationBtnText?: any; // 操作按钮文字 ==> 非必传
   emptyListText?: string; // 空列表文本描述
+  isShowSearch?: boolean; // 是否显示搜索模块
   title?: string; // 表格标题，目前只在打印的时候用到 ==> 非必传
   pagination?: boolean; // 是否需要分页组件 ==> 非必传（默认为true）
   initParam?: any; // 初始化请求参数 ==> 非必传（默认为{}）
