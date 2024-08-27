@@ -32809,8 +32809,7 @@ const useTable = (api, initParam = {}, isPageable = true, dataCallBack, requestE
   const pageParam = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.computed)({
     get: () => {
       return {
-        pageNum: state.pageable.page,
-        pageNo: state.pageable.page,
+        page: state.pageable.page,
         pageSize: state.pageable.pageSize
       };
     },
